@@ -10,3 +10,15 @@
     refs.menu.classList.toggle('is-open');
   }
 })();
+
+(() => {
+  const contactForm = document.querySelector('.form-contact');
+  if (!contactForm) return;
+
+  // Keep the page from reloading and the entered data out of the URL
+  contactForm.addEventListener('submit', event => {
+    event.preventDefault();
+    alert('Thank you! We will contact you soon.');
+    contactForm.reset();
+  });
+})();
