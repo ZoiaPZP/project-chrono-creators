@@ -1,27 +1,39 @@
 # WatchCharm
 
-Командний проект
+Responsive landing page for a fictional watch shop — a team project from the
+[GoIT](https://goit.global) Fullstack course (HTML + CSS module, November 2024).
 
-## Посилання для проекту
+**Live demo:** [zoiapzp.github.io/project-chrono-creators](https://zoiapzp.github.io/project-chrono-creators/)
 
-- [ТЗ проекту](https://docs.google.com/spreadsheets/d/1TCUn3kVOhP8XdGMQM1QPVwAY3OG3zyXYtsBz7ghO-g4/edit?gid=0#gid=0)
-- [Проект у LMS](https://www.edu.goit.global/uk/learn/25425923/6420483/6420508/extras)
-- [Матеріали до проекту (презентація)](https://docs.google.com/presentation/d/1_QpjBvS2UnU_OKJUgzx6eXqTZVXrOFRJ/edit?usp=sharing&ouid=107244728602973793202&rtpof=true&sd=true)
-- [FS План роботи над проєктом HTML+CSS](https://docs.google.com/document/d/1r3t8h-U6AywuIUVp_5uOpcD3wlawpnl8rnUwuoTGPXg/edit?tab=t.0#heading=h.1lml89vpquny)
-- [TECH-Критерії прийняття проєкту з HTML+CSS](https://docs.google.com/document/d/1x6QWeDRL-KhO1km5csniZrjHLhiCn70tVj3O0_vz_aY/edit?tab=t.0)
-- [CHECK-LIST для проведення презентації студентського проєкту](https://docs.google.com/document/d/1cboEr4YJlNMf7ZXdGUqnUIuCSa5jrDTDxbK2vdfOv9o/edit?tab=t.0)
+## Sections
 
-- [Скрінкаст по командній роботі](https://www.youtube.com/playlist?list=PLViULGko0FdhenLVFL0YHSFuCIf_id0l3)
-- [Презентація до скринкасту про командній роботу на HTML+CSS](https://docs.google.com/presentation/d/1YPtkJjtMjxoQPEMG_rrKkQsn1mkC_dyCu7xkHog-1vA/edit#slide=id.g21f3f668489_0_1992)
-- [Додаток для планування scrumpoker](https://www.scrumpoker-online.org/en/)
+Header · Hero · About us · Catalog · Sale · Reviews · Advertisement · Contact us · Footer,
+plus a mobile menu for phones and tablets.
 
-- [Скринкаст по роботі з Trello](https://www.youtube.com/watch?v=dm89LgP2I9M)
-- [Інструкція по створенню Trello та роботі в ньому](https://docs.google.com/document/d/1wR1uYEhxoSm43gW45d57Zv76eR0poCK435Ghe28oo8A/edit?tab=t.0)
+## Tech stack
 
-- [Про роботу з репозиторієм через термінал](https://www.youtube.com/watch?v=wFY5HVuQBgw)
+- Semantic HTML5 split into partials (`vite-plugin-html-inject`)
+- CSS, mobile-first, with media queries sorted by `postcss-sort-media-queries`
+- SVG sprite for icons; WebP / JPG images in 1x and 2x for retina screens
+- Vanilla JavaScript for the mobile menu and the contact form
+- [Vite](https://vitejs.dev) for development and build, deployed to GitHub Pages
 
-- [Як здати ДЗ по проєкту в LMS](https://www.youtube.com/watch?v=9Ts2LBsdQfU)
+## My part
 
-- [Створи спрайт із усіма іконками](https://icomoon.io/)
-- [Оптимізуй спрайт за допомогою SVGOMG](https://jakearchibald.github.io/svgomg/)
-- [Оптимізація jpg зображень](https://squoosh.app/)
+I built the **mobile menu** (`src/partials/mobile-menu.html`, `src/css/mobile-menu.css`):
+layout for mobile and tablet, the open/close icons in the sprite, and the
+responsive watch images (WebP, 1x/2x).
+
+## Team
+
+Built by a team of 9 developers working in Git branches with pull requests and
+code review. Team lead: [PushEaxVK](https://github.com/PushEaxVK).
+Original repository: [PushEaxVK/project-chrono-creators](https://github.com/PushEaxVK/project-chrono-creators).
+
+## Run locally
+
+```bash
+npm ci
+npm run dev      # http://localhost:5173
+npm run build    # production build in dist/
+```
