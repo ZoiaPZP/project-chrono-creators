@@ -291,3 +291,17 @@
     min-width: 505px;
   }
 }
+
+/* Where the design and images come from. */
+.credit-footer {
+  margin-top: 16px;
+  font-size: 10px;
+  line-height: 1.4;
+  color: rgba(251, 251, 251, 0.5);
+}
+
+@media (min-width: 768px) {
+  .credit-footer {
+    font-size: 12px;
+  }
+}
